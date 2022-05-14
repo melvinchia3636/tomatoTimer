@@ -17,7 +17,7 @@ function Navbar() {
           <Icon icon="uil:cog" className="w-5 h-5 mr-2" />
           Settings
         </button>
-        <button className="text-amber-500 bg-white w-32 py-3 rounded-md font-semibold shadow-[0_4px_0_rgb(25,25,25,0.1)]">Login</button>
+        <button className="text-amber-400 bg-white w-32 py-3 rounded-md font-semibold shadow-[0_4px_0_rgb(25,25,25,0.1)]">Login</button>
       </div>
     </nav>
   )
