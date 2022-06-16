@@ -62,7 +62,7 @@ function App() {
       <Navbar />
       <div className="w-full h-full min-h-0 flex text-white">
         <TaskList />
-        <div className="flex-1 flex flex-col gap-16 items-center justify-center relative">
+        <section className="flex-1 flex flex-col gap-16 items-center justify-center relative">
           <div className="w-[calc(100%-2px)] absolute z-0 top-0 left-0 h-1 bg-amber-500 bg-opacity-60 translate-x-[2px] translate-y-[2px]">
             <div
               className="h-1 bg-white"
@@ -90,7 +90,7 @@ function App() {
           </div>
           <div className="font-['DSEG7_Classic_Mini'] text-9xl drop-shadow-[0_6px_0_rgb(25,25,25,0.1)]">{moment.utc(moment.duration(timeLeft, 'seconds').as('milliseconds')).format('mm:ss')}</div>
           <button type="button" onClick={() => setIsRunning(!isRunning)} className={`bg-white text-amber-400 text-2xl font-bold uppercase w-56 py-4 rounded-md tracking-wide transition-all ${isRunning ? 'translate-y-[4px]' : 'shadow-[0_6px_0_rgb(25,25,25,0.1)]'}`}>{['Start', 'Stop'][Number(isRunning)]}</button>
-        </div>
+        </section>
       </div>
     </div>
   );

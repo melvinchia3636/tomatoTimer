@@ -14,3 +14,16 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.strike {
+  width: calc(100%);
+  background-image: linear-gradient(black, black 10px);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: left calc(50% + 1px);
+  transition: background-size 1s;
+}
+
+.strike.active {
+  background-size: 100% 2px;
+}
